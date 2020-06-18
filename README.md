@@ -2,6 +2,7 @@
 ## Satvik Ajmera, John Byun, Shaymus McTeague, Kenneth Tanaka
 
 ### The Data
+
 Fortunately for us, the data we needed was quite readily available as CSV files. Portland Trail
 Blazers data was gathered from Kaggle [NBA Team Game Stats from 2014 to 2018](https://www.kaggle.com/ionaskel/nba-games-stats-from-2014-to-2018) (one CSV file)
 
@@ -29,19 +30,26 @@ We had initially tried to merge two crime files and quickly learned that was not
 
 
 ### Visualizations & Observations
-[Visual 1](Output/TotCrimeCountForEachYear-2.png)
+
+[Total Crime Count For Each Year](Output/TotCrimeCountForEachYear-2.png)
 
 This visualization showed the total crime count per month during the years 2015, 2016, 2017 and 2018. During every year, the total crime counts per month varied. During 2015, January, February, March and April showed an upwards trend in crimes. However, this is due to the Portland crime reporting measures during this time.
 
-[Visual 2](Output/TotCrimeCountForEachYearfor3NBAseasons-3.png)
+[Total Crime Count For Each Year for 3 NBA seasons](Output/TotCrimeCountForEachYearfor3NBAseasons-3.png)
 
 This visualization shows the total crime count per month for each NBA season. The visualization allowed us to eliminate the bad data during Jan, Feb, Mar and Apr 2015 and better represent the crime count per season.
 
-[Visual 3](Output/AverageCrimeCountperTypeofGame-1.png)
+[Average Crime Count per Type of Game](Output/AverageCrimeCountperTypeofGame-1.png)
+
+In this bar chart we have the y-axis as the average crime count and the x-axis the game type (AwayL, AwayW, HomeL, HomeW and NoGame). The AwayL bar shows the average crime count for every away game the Portland Trail Blazers lost. The AwayW bar shows the average crime count for every away game that the Trail Blazers won. The HomeL and HomeW bars show the average crime count for home losses and home wins in Portland. Lastly, the NoGame bar shows the average crime count for every non-game day. 
 
 
-[Visual 4](Output/AverageCrimeCountperDayoftheWeek-4.png)
+[Average Crime Count per Day of the Week](Output/AverageCrimeCountperDayoftheWeek-4.png)
+
+For this visualization, we compared all home games to non-game days. Using the years 2015, 2016, 2017 and 2018, we figured out the average number of crimes committed for each day of the week. As we can see, the average crimes count on non-game days exceed the average crimes count for home games except for Tuesdays. On Tuesdays, the average crime count is greater than all no game Tuesdays.
 
 
+### More Statistical Tests 
 
-AverageCrimeCountperTypeofGame(#1)
+We also ran more tests including the Chi Squared Test, ANOVA and Independent T-Test. Look at the [Full Write Up](Observations_Crime_TrailBlazers.pdf) for the details.
+
